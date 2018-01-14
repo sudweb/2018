@@ -25,8 +25,9 @@ is_home: true
     </div>
     <div class="text-center">
       <a class="cta button-type2" href="{{ site.baseurl }}/{% t appel-a-sujets %}/" data-event-category="cta" data-event-action="click"
-        data-event-label="navigation-cfp">Intervenir</a><br/>
-        Les inscriptions ouvriront très bientôt.
+        data-event-label="navigation-cfp">Intervenir</a> 
+      <a class="cta button-type2" href="{{ site.baseurl }}/{% t inscription %}/" data-event-category="cta" data-event-action="click"
+        data-event-label="navigation-cfp">Participer</a><br/>
     </div>
   </div>
 </div>
@@ -205,3 +206,16 @@ is_home: true
 
   <!-- nothing here! -->
 </div>
+
+<section class="white-section">
+  <div class="wrapper text-center">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="orange svg-size" viewbox="0 0 400 400">
+      <use xlink:href="{{site.baseurl}}/assets/images/symbol-defs.svg#rocket" />
+    </svg>
+    <p class="h-like tiny-title-size">En route pour Anduze !</p>
+    <div class="text-center">
+      {% capture signup_url %}{% if page.locale == 'en_US' %}/en{% endif %}/{% t inscription %}/{% endcapture %}
+      <a class="cta button-type1" href="{{signup_url}}#billetterie" data-event-category="cta" data-event-action="click" data-event-label="inscription-rappel-bas-de-page">Acheter une place</a>
+    </div>
+  </div>
+</section>

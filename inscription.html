@@ -1,0 +1,90 @@
+---
+title: Inscription
+description: "Prenez vos places, il n'y en aura pas pour tout le monde."
+---
+
+<section class="white-section">
+  <div class="wrapper">
+    <h1 class="regular-title-size uppercase text-center red">Inscription</h1>
+    <div class="grid-3">
+      <section>
+        <h4 class="tiny-title-size">Une journée de conférence</h4>
+        <p>Le vendredi, une journée placée sous l'angle de la transmission, du retour d'expérience et de l'émotion.</p>
+      </section>
+      <section>
+        <h4 class="tiny-title-size">La journée de Forum Ouvert</abbr>
+        </h4>
+        <p>Le samedi, une journée d'échange et de co-construction, où tout devient possible.</p>
+      </section>
+      <section>
+        <h4 class="tiny-title-size">Les soirés communautaires</abbr>
+        </h4>
+        <p>Pour apprendre à se connaitre, se détendre et discuter, des soirées dans un cadre reposant le jeudi, le vendredi…
+          et plus si affinités !</p>
+      </section>
+    </div>
+  </div>
+</section>
+
+<section class="white-section" id="billetterie">
+  <div class="wrapper text-center">
+    <h2 class="regular-title-size red uppercase">Acheter sa place</h2>
+
+    <div class="grid-2">
+      <section>
+        <h4 class="tiny-title-size">Un tarif de base</h4>
+        <p>Pour être sûr·e de pouvoir participer à Sud Web, du jeudi soir au samedi, avec repas inclus et hébergement offert,
+          choisissez le tarif plein.</p>
+      </section>
+      <section>
+        <h4 class="tiny-title-size">Un don</abbr>
+        </h4>
+        <p>Ce don permettra de financer des places à tarif très réduit pour celles et ceux qui en ont besoin.</p>
+      </section>
+    </div>
+    <div class="text-center">
+      <a class="small-size" href="https://sudweb.fr/blog/2018/les-tarifs-de-sud-web-2018/">En savoir plus sur notre blog</a>
+    </div>
+
+    <a title="Billetterie en ligne pour Sud Web" href="https://www.weezevent.com/?c=sys_widget" class="weezevent-widget-integration"
+      target="_blank" data-src="https://www.weezevent.com/widget_billeterie.php?id_evenement=308930&lg_billetterie=1&code=76027&resize=1&width_auto=1&color_primary=00AEEF"
+      data-width="650" data-height="600" data-id="308930" data-resize="1" data-width_auto="1" data-noscroll="0" data-nopb="0">Billetterie Weezevent</a>
+    <script type="text/javascript" src="https://www.weezevent.com/js/widget/min/widget.min.js"></script>
+  </div>
+</section>
+
+
+<div class="talk-banner">
+  <!-- nothing here! -->
+</div>
+
+
+<section class="yellow-section">
+  <div class="wrapper">
+
+    <h2 class="regular-title-size uppercase text-center">Le pouvoir du choix</h2>
+
+    <p>Vous pouvez choisir de vivre l’évènement de différentes manières, mais quoi qu’il en soit, sachez que vous serez chouchouté·e·s
+      et bien nourri·e·s. Chaque place comprend de copieux petits-déjeuners, de délicieux buffets déjeunatoires, et de petites
+      collations pendant les pauses pour vous éviter l’hypoglycémie. Sans oublier les soirées communautaires, pour prolonger
+      les échanges de la journée.</p>
+
+  </div>
+</section>
+<section class="white-section">
+    <div class="wrapper text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="orange svg-size" viewbox="0 0 400 400">
+        <use xlink:href="{{site.baseurl}}/assets/images/symbol-defs.svg#rocket" />
+        </svg>
+        <p class="h-like tiny-title-size">En route pour Anduze !</p>
+        <div class="text-center">
+        {% capture signup_url %}{% if page.locale == 'en_US' %}/en{% endif %}/{% t inscription %}/{% endcapture %}
+        <a class="cta button-type1" href="{{signup_url}}#billetterie" data-event-category="cta" data-event-action="click" data-event-label="inscription-rappel-bas-de-page">Acheter une place</a>
+        </div>
+    </div>
+</section>
+
+
+<div class="workshop-banner">
+  <!-- nothing here! -->
+</div>

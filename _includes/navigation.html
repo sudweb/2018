@@ -20,6 +20,12 @@
     {% else %}
     <a  class="nav" href="{{ page.baseurl | default:site.baseurl }}/{% t appel-a-sujets %}/" title="{{ link.title }}" data-event-category="cta" data-event-action="click" data-event-label="navigation-home" >{% t Proposer un sujet %}</a>
     {% endif %}
+    {% capture signup_url %}{% if page.locale == 'en_US' %}/en{% endif %}/{% t inscription %}/{% endcapture %}
+    {% if page.url == signup_url %}
+    <span class="nav is--active">{% t Participer %}</span>
+    {% else %}
+    <a  class="nav" href="{{ page.baseurl | default:site.baseurl }}/{% t inscription %}/" title="{{ link.title }}" data-event-category="cta" data-event-action="click" data-event-label="navigation-home" >{% t Participer %}</a>
+    {% endif %}
     {% comment %}
     {% for link in site.data.navigation.primary %}
     {% if page.url == link.url %}
