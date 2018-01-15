@@ -105,3 +105,16 @@ En ce qui concerne la personne à l'origine de la situation, l'exclusion est pos
     <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/" target="_blank" rel="noopener noreferrer">CC-BY-NC-SA 2.0</a>
   </p>
 </div>
+
+<section class="white-section">
+    <div class="wrapper text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="orange svg-size" viewbox="0 0 400 400">
+        <use xlink:href="{{site.baseurl}}/assets/images/symbol-defs.svg#rocket" />
+        </svg>
+        <p class="h-like tiny-title-size">En route pour Anduze !</p>
+        <div class="text-center">
+        {% capture signup_url %}{% if page.locale == 'en_US' %}/en{% endif %}/{% t inscription %}/{% endcapture %}
+        <a class="cta button-type1" href="{{signup_url}}#billetterie" data-event-category="cta" data-event-action="click" data-event-label="inscription-rappel-bas-de-page">Acheter une place</a>
+        </div>
+    </div>
+</section>
