@@ -1,11 +1,14 @@
 ---
-title: Inscription
+title: S'inscrire
 description: "Prenez vos places, il n'y en aura pas pour tout le monde."
 ---
 
 <section class="white-section">
   <div class="wrapper">
-    <h1 class="regular-title-size uppercase text-center red">Inscription</h1>
+    <h1 class="regular-title-size uppercase text-center red">S'inscrire</h1>
+
+    <p>Cette année, Sud Web propose une nouvelle expérience, <a href="#choose">l'immersion totale ou partielle</a>. Du jeudi 24 au samedi 26 mai venez vivre : </p>
+
     <div class="grid-3">
       <section>
         <h4 class="tiny-title-size">Une journée de conférence</h4>
@@ -17,10 +20,11 @@ description: "Prenez vos places, il n'y en aura pas pour tout le monde."
         <p>Le samedi, une journée d'échange et de co-construction, où tout devient possible.</p>
       </section>
       <section>
-        <h4 class="tiny-title-size">Les soirés communautaires</abbr>
+        <h4 class="tiny-title-size">Tous les moments informels</abbr>
         </h4>
-        <p>Deux soirée (jeudi et vendredi) pour apprendre à se connaitre, se détendre et discuter dans un cadre reposant.</p>
+        <p>En particulier les soirées communautaires (jeudi et vendredi) pour apprendre à se connaitre, se détendre et discuter dans un cadre reposant.</p>
       </section>
+
     </div>
   </div>
 </section>
@@ -29,7 +33,7 @@ description: "Prenez vos places, il n'y en aura pas pour tout le monde."
   <div class="wrapper text-center">
     <h2 class="regular-title-size red uppercase">Acheter sa place</h2>
 
-    <div class="grid-2">
+    <div class="grid-2" id="billetterie">
       <section>
         <h4 class="tiny-title-size">Un tarif de base</h4>
         <p>Pour être sûr·e de pouvoir participer à Sud Web, du jeudi soir au samedi, avec repas inclus et hébergement offert,
@@ -61,12 +65,12 @@ description: "Prenez vos places, il n'y en aura pas pour tout le monde."
 <section class="yellow-section">
   <div class="wrapper">
 
-    <h2 class="regular-title-size uppercase text-center">Le pouvoir du choix</h2>
+    <h2 class="regular-title-size uppercase text-center" id="choose">Le pouvoir du choix</h2>
 
-    <p>Vous pouvez choisir de vivre l’évènement de différentes manières, mais quoi qu’il en soit, sachez que vous serez chouchouté·e·s
-      et bien nourri·e·s. Chaque place comprend de copieux petits-déjeuners, de délicieux buffets déjeunatoires, et de petites
-      collations pendant les pauses pour vous éviter l’hypoglycémie. Sans oublier les soirées communautaires, pour prolonger
-      les échanges de la journée.</p>
+    <p>Vous pouvez choisir de vivre l’évènement de différentes manières : en restant au Val de l'Hort avec nous pendant toute la durée de l'événement ou en profitant de ce que propose Anduze en terme d'hébergement, de repas et autres divertissements.<br>
+    Mais quoi qu’il en soit, sachez que vous serez chouchouté·e·s et bien nourri·e·s. Chaque place comprend de copieux petits-déjeuners, de délicieux buffets déjeunatoires, et de petites collations pendant les pauses pour vous éviter l’hypoglycémie. Sans oublier les soirées communautaires, pour prolonger les échanges de la journée.</p>
+
+    <p>Si vous avez des questions, n'hésitez pas à nous contacter : <a href="mailto:contact@sudweb.fr">par mail</a>, par <a href="https://twitter.com/sudweb">Twitter</a>, par <a href="http://sudweb.herokuapp.com/">Slack</a>.</p>
 
   </div>
 </section>
@@ -78,7 +82,7 @@ description: "Prenez vos places, il n'y en aura pas pour tout le monde."
         <p class="h-like tiny-title-size">En route pour Anduze !</p>
         <div class="text-center">
         {% capture signup_url %}{% if page.locale == 'en_US' %}/en{% endif %}/{% t inscription %}/{% endcapture %}
-        <a class="cta button-type1" href="{{signup_url}}#billetterie" data-event-category="cta" data-event-action="click" data-event-label="inscription-rappel-bas-de-page">Acheter une place</a>
+        <a class="cta button-type1" href="#billetterie" data-event-category="cta" data-event-action="click" data-event-label="inscription-rappel-bas-de-page">Acheter une place</a>
         </div>
     </div>
 </section>
