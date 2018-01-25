@@ -6,9 +6,10 @@
 
 $black                            : #000000;
 $softgrey                         : #ABB4BE;
-$softwhite                        : #FCFEFD;
+$softwhite                        : #FDFEFD;
 $white                            : #FFFFFF;
-$green                            : #879e38;
+$green                            : #869c37;
+$contrastgreen                    : #1a8803;
 $darkgreen                        : #465b33;
 
 $blue                             : #12A6C6;
@@ -29,7 +30,7 @@ $alert                            : $red;
 
 $default-color                    : $darkgreen;
 $default-bg                       : $softwhite;
-$focus-color                      : $green;
+$focus-color                      : $contrastgreen;
 
 $link-color                       : $focus-color;
 
