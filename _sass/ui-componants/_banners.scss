@@ -3,6 +3,11 @@
 	position: relative;
 	padding: 30% 0;
 	background: center / cover no-repeat fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-attachment: fixed;
 
 	@include media('>large') {
 		padding: 20% 0;
