@@ -43,20 +43,17 @@ clementine:
     bio: >-
       <span lang="en">Product owner</span>. Après avoir débuté en e-santé au <abbr title="Centre Hospitalier Universitaire">CHU</abbr> de Bordeaux, Clémentine co-fonde dtc et travaille sur des enjeux de transparence public. Aujourd'hui installée à Montréal elle continue l'aventure dtc.
 
-edwy:
-  name: Edwy Plenel
-  image: /assets/images/speakers/edwy.jpg
-  url: https://www.mediapart.fr/
+anonyme:
+  name: Orateur anonyme
+  image: /assets/images/speakers/default.png
   fr_FR:
     alt: >-
-      Edwy Plenel sourit. Ses yeux plissés lui donne un air amusé.
+      Un picto représentant un•e orateur•rice, anonyme
     bio: >-
-      Journaliste (depuis 1976), président et co-fondateur de Mediapart, journal d'information numérique, indépendant et participatif.
   en_US:
     alt: >-
-      Edwy Plenel smiles. His wrinkled eyes make him look amused.
+      An icon of anonymous
     bio: >-
-      Journalist (since 1976), president and co-founder of Mediapart, a digital, independent and participative information newspaper.
 
 emil:
   name: Emil (ChezPapaPapou)
