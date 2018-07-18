@@ -15,18 +15,18 @@
       </h3>
       {{ verbatim.description | markdownify }}
 
-      {% if verbatim.vimeo_id %}
+      {% if conference.vimeo_id %}
       <p class="text-center">
-        <iframe src="https://player.vimeo.com/video/{{ verbatim.vimeo_id }}?color=ffffff" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/{{ conference.vimeo_id }}?color=ffffff" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <br/><a href="https://vimeo.com/{{ verbatim.vimeo_id }}">{% t voir sur Vimeo %}</a>.</p>
       {% endif %}
-      {% if verbatim.transcript or verbatim.slides %}
+      {% if conference.transcript or conference.slides %}
         <p class="text-center">
-        {% if verbatim.transcript %}
-          <a class="button" data-text="{% t lire la version textuelle %}" href="{{ verbatim.transcript }}" title="{% t lire la version textuelle %}"><span class="button-inner">{% t lire la version textuelle %}</span></a>
+        {% if conference.transcript %}
+          <a class="button" data-text="{% t lire la version textuelle %}" href="{{ conference.transcript }}" title="{% t lire la version textuelle %}"><span class="button-inner">{% t lire la version textuelle %}</span></a>
         {% endif %}
-        {% if verbatim.slides %}
-          <a class="button" data-text="{% t consulter le support %}" href="{{ verbatim.slides }}" title="{% t consulter le support %}"><span class="button-inner">{% t consulter le support %}</span></a>
+        {% if conference.slides %}
+          <a class="button" data-text="{% t consulter le support %}" href="{{ conference.slides }}" title="{% t consulter le support %}"><span class="button-inner">{% t consulter le support %}</span></a>
         {% endif %}
         </p>
       {% endif %}
