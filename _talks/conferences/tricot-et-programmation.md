@@ -10,4 +10,5 @@ fr_FR:
     <p><small>(*) offre soumise à conditions</small></p>
 transcript: https://weblog.redisdead.net/main/post/Tricot-et-programmation
 slides: https://docs.google.com/presentation/d/1siYVSCJd9MzmUg3yTUxre7KEarQHjQ46rhsN5AA9if4/edit
+vimeo_id: 329347268
 ---
